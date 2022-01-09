@@ -35,6 +35,8 @@ bool Timer_Callback(struct repeating_timer *t)
         
         if (actPour<5)
             ElapseTimer=TimePerPour*10;
+        else
+            nSeq=2;
     }
 }
 
