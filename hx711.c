@@ -35,11 +35,29 @@ unsigned long ReadHX711(void)
             ulReturn++;
     }
 
+    // CLock 25
+
     gpio_put(PD_SDK, 1);
     sleep_us(5);
 
     gpio_put(PD_SDK, 0);
     sleep_us(5);
 
+ /*   // CLock 26
+
+    gpio_put(PD_SDK, 1);
+    sleep_us(5);
+
+    gpio_put(PD_SDK, 0);
+    sleep_us(5);
+
+    // CLock 27
+
+    gpio_put(PD_SDK, 1);
+    sleep_us(5);
+
+    gpio_put(PD_SDK, 0);
+    sleep_us(5);
+*/
     return ulReturn;
 }

@@ -96,7 +96,7 @@ int main() {
       
     while (true) {
 
-        LoadCellValue=ReadHX711();
+        LoadCellValue=(ReadHX711()+ReadHX711()+ReadHX711()+ReadHX711())/4;
         rawWeight = (float)LoadCellValue;
         rawWeight = ((rawWeight - ZEROVAL) * 2000) / 485000;
 
